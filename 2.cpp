@@ -3,6 +3,7 @@ using namespace std;
 int a[20]={1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 bool a1[20]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 int n=0;
+int dfs(int);
 int main()
 {
     int b=1;
@@ -31,7 +32,13 @@ int main()
     }
     for (int i = 20; i >=0; i--)
     {
-        cout<<a1[i];
+        //cout<<a1[i];
+        if (a1[i]==1)
+        {
+            dfs(0);//二进制判定
+        }
+        
+        
     }
     
     return 0;
